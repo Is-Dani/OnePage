@@ -1,0 +1,481 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin     : 0;
+  padding    : 0;
+  font-family: "lato", sans-serif;
+}
+
+h1 {
+  font-size  : 50px;
+  font-family: Audiowide;
+}
+
+p {
+  font-size  : 14px;
+  line-height: 20px;
+  color      : #0404048a;
+}
+
+/* navbar o menu de navegacion */
+.navbar {
+  position        : fixed;
+  display         : flex;
+  justify-content : center;
+  align-items     : center;
+  flex-direction  : row;
+  flex-wrap       : wrap;
+  background-color: #dfe3ec;
+  width           : 100%;
+  height          : 70px;
+  z-index         : 1;
+}
+
+.nav {
+  display        : flex;
+  justify-content: center;
+  list-style     : none;
+  font-size: 12px;
+}
+
+.logo {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight   : bold;
+  font-size     : 35px;
+}
+
+img {
+  width: 20%;
+}
+
+a {
+  margin         : 15px;
+  color          : #000;
+  text-decoration: none;
+  text-transform : uppercase;
+}
+
+a:hover {
+  color: #000;
+}
+
+/* fin: navbar menu de navegacion */
+/* banner imagen de inicio  */
+.banner-inicio {
+  position         : relative;
+  background-image : url(1.jpg);
+  width            : 100%;
+  height           : 100vh;
+  background-repeat: no-repeat;
+  background-size  : cover;
+}
+
+.about-area {
+  background-image: linear-gradient(to right, rgba(32, 40, 119, 0.95), rgba(55, 46, 149, 0.95), rgba(83, 49, 177, 0.90), rgba(114, 48, 205, 0.85), rgba(150, 41, 230, 0.95));
+  position       : relative;
+  display        : flex;
+  justify-content: space-around;
+  align-items    : center;
+  flex-wrap      : wrap;
+  flex-direction : row;
+  width          : 100%;
+  height         : 300px;
+}
+
+.text-part {
+  width : 65%;
+  height: 80%;
+}
+
+.about-area {
+  background-color: #fefefe;
+}
+
+
+
+/* seccion best strategy: estrategia part1 part2 */
+.estrategia2 {
+  background: #70caeea3;
+}
+
+.estrategia {
+  padding      : 6rem 0;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.estrategia h2 {
+  text-align   : center;
+  margin-bottom: 3rem;
+}
+
+.estrategia .flex {
+  flex-wrap: wrap;
+}
+
+.estrategia2 .flex2 {
+  flex-wrap      : wrap;
+  display        : flex;
+  justify-content: space-around;
+}
+
+.estrategia .flex>div {
+  background   : white;
+  width        : 30%;
+  margin-bottom: 2rem;
+  border       : 2px solid #d5d0d0;
+}
+
+.estrategia2 .flex2>div {
+  background   : white;
+  width        : 36%;
+  margin-bottom: 2rem;
+  border       : 2px solid #d5d0d0;
+}
+
+.estrategia .flex>div .fas {
+  color     : #54afe8;
+  font-size : 40px;
+  float     : left;
+  margin-top: 15px;
+  width     : 20%;
+  text-align: center;
+}
+
+.estrategia .flex>div .estrategia-card-right {
+  float         : right;
+  width         : 75%;
+  padding-bottom: 30px;
+}
+
+.estrategia .flex>div a {
+  color          : #3498db;
+  text-decoration: none;
+}
+
+.estrategia .flex>div a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 100%;
+  margin   : 0 auto;
+  padding  : 0 100px;
+}
+
+.flex {
+  display        : flex;
+  justify-content: space-around;
+  /* margin      : 50px 170px; */
+}
+
+.contenido-card {
+  padding: 30px;
+}
+
+.centro {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .icono{
+    display: block !important;
+    width: 100%;
+  height: 10px;
+  
+  }
+  .nav{
+    display: none;
+  }
+  .container{
+    padding: 0px 25px;
+  }
+  .precio{
+    padding: 1px !important;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  .container {
+    max-width: 540px;
+  }
+
+  .estrategia {
+    padding: 4rem 0 3rem;
+    margin : 4rem 0;
+  }
+
+  .estrategia .flex>div {
+    width: 100%;
+  }
+  .estrategia2 .flex2>div {
+    width: 100%;
+  }
+
+
+  .wrapper-card {
+    display: flex;
+    width  : 100%;
+  }
+
+  footer {
+    padding: 0px !important;
+  }
+
+  footer .flex {
+    flex-wrap: wrap;
+  }
+
+  footer .flex>div {
+    width     : 100%;
+    margin-top: 1rem;
+  }
+
+  footer .flex>div:first-child {
+    margin-top: 0;
+  }
+
+  footer .footer-about p {
+    font-size: 1rem;
+    width    : 100%;
+  }
+
+  footer .footer-subscribe input {
+    width: 90%;
+  }
+
+  footer h5.follow-us {
+    margin-top: 2rem;
+  }
+ 
+
+}
+
+/* fin estrategia */
+/* card de precio */
+.precio {
+  background: #f8f9fa;
+  padding   : 40px;
+}
+
+.wrapper-card {
+  display        : flex;
+  flex-wrap      : wrap;
+  margin         : 40px auto;
+  width          : 70%;
+  justify-content: space-around;
+}
+
+.card {
+  background   : #fff;
+  border       : 2px solid #54afe8;
+  border-radius: 3px;
+  box-shadow   : 0 1px 1px rgba(0, 0, 0, 0);
+  margin       : 8px;
+  padding      : 30px;
+  position     : relative;
+  text-align   : center;
+}
+
+.card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.card-title h3 {
+  color         : rgba(0, 0, 0, 0.3);
+  font-size     : 15px;
+  text-transform: uppercase;
+}
+
+.card-title h4 {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.card-price {
+  margin: 60px 0;
+}
+
+.card-price h1 {
+  font-size: 46px;
+  color    : #54afe8;
+}
+
+.card-price h1 sup {
+  font-size  : 15px;
+  display    : inline-block;
+  margin-left: -20px;
+  width      : 10px;
+}
+
+.card-price h1 small {
+  color         : rgba(0, 0, 0, 0.3);
+  display       : block;
+  font-size     : 11px;
+  text-transform: uppercase;
+}
+
+.card-description ul {
+  display   : block;
+  list-style: none;
+  margin    : 60px 0;
+  padding   : 0;
+}
+
+.card-description li {
+  color    : rgba(0, 0, 0, 0.6);
+  font-size: 15px;
+  margin   : 0 0 15px;
+}
+
+
+.boton button {
+  color           : #fff;
+  display         : block;
+  padding         : 20px;
+  width           : 100%;
+  height          : 60px;
+  background-color: #3498db;
+  font-size       : 17px;
+  border          : 2px solid #3498dbc0;
+}
+
+
+/* inicio: footer styles */
+footer {
+  background: #fefefe;
+  padding   : 8rem 8rem 0 8rem;
+}
+
+footer .flex {
+  padding-bottom: 6rem;
+  border-bottom : 1px solid #777;
+}
+
+footer h5 {
+  color        : #fff;
+  margin-bottom: 1rem;
+  font-weight  : 300;
+}
+
+footer h5.follow-us {
+  margin-top: 1rem;
+}
+
+footer .footer-about {
+  width: 47%;
+}
+
+footer .footer-about p {
+  width: 65%;
+}
+
+footer .footer-subscribe {
+  width: 35%;
+}
+
+#subscribe-container {
+  position: relative;
+}
+
+footer .footer-subscribe input {
+  border-radius   : 30px;
+  height          : 43px;
+  font-family     : "Roboto", "Helvetica", "Sans-serif";
+  border          : 1px solid #6c757d;
+  background-color: transparent;
+  font-size       : 1rem;
+  padding         : 10px;
+  color           : #fff;
+  box-sizing      : border-box;
+  width           : 80%;
+}
+
+footer button.right-rounded {
+  border-top-right-radius   : 30px;
+  border-bottom-right-radius: 30px;
+  background                : #3498db;
+  font-size                 : 16px;
+  color                     : #fff;
+  padding                   : 10px 30px 9px;
+  line-height               : 1.5;
+  cursor                    : pointer;
+  border                    : none;
+  position                  : absolute;
+  right                     : 0;
+}
+
+footer button.right-rounded:hover {
+  background: #fff;
+}
+
+footer .footer-subscribe ul {
+  list-style-type: none;
+  padding        : 0;
+  margin         : 0;
+}
+
+footer .footer-subscribe ul li {
+  display: inline-block;
+  margin : 0 16px;
+}
+
+footer .footer-subscribe ul li:first-child {
+  margin-left: 0;
+}
+
+footer .footer-subscribe ul li a {
+  text-decoration: none;
+  color          : #777;
+}
+
+footer .footer-subscribe ul li a:hover {
+  color: #fff;
+}
+
+footer small {
+  margin-top: 3rem;
+  font-size : 1rem;
+  display   : block;
+  text-align: center;
+}
+
+footer small a {
+  color          : #777;
+  text-decoration: none;
+}
+
+footer small a:hover {
+  color: #fff;
+}
+
+/* fin: footer  */
+em.far.fa-star {
+  color: #ffc107;
+}
+.blanco{
+  color: white;
+}
+.login{
+  padding: 5px;
+  background: #03a9f45c;
+  margin: -5px;
+}
+
+
+.icono{
+  width: 100%;
+  height: 10px;
+  display: none !important;
+}
